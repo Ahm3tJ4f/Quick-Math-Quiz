@@ -5,8 +5,8 @@ const answer = document.querySelector('#answer')
 
 const checkOperation = () => {
 
-    const num1 = Math.floor(Math.random()*99+1);
-    const num2 = Math.floor(Math.random()*99+1);
+    const num1 = Math.floor(Math.random()*89+10);
+    let num2 = Math.floor(Math.random()*89+10);
     let res;
     operation = Math.floor(Math.random()*3+1);
     
@@ -18,7 +18,8 @@ const checkOperation = () => {
         res = num1 - num2;
         expression.innerHTML = `${num1} - ${num2} = `;
 
-    } else if (operation === 3) {  
+    } else if (operation === 3) {
+        num2 = Math.floor(num2/10)
         res = num1 * num2;
         expression.innerHTML = `${num1} * ${num2} = `;
  

@@ -5,8 +5,8 @@ const answer = document.querySelector('#answer')
 
 const checkOperation = () => {
 
-    const num1 = Math.floor(Math.random()*100+1);
-    const num2 = Math.floor(Math.random()*9+1);
+    const num1 = Math.floor(Math.random()*99+1);
+    const num2 = Math.floor(Math.random()*99+1);
     let res;
     operation = Math.floor(Math.random()*3+1);
     

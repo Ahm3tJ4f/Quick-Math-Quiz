@@ -50,7 +50,7 @@ submit.addEventListener('click', (e) => {
 
         isCorrect.innerHTML = (`Wrong, try again!`);   
         answer.style.backgroundColor = '#E35331';
-        answer.style.color = '#EAF5FA';
+        answer.style.color = '#FFFF';
     }
 
     document.querySelector('#result').appendChild(isCorrect);    
